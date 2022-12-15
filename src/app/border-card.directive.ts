@@ -14,7 +14,7 @@ export class BorderCardDirective {
   }
 
   @Input('pkmBorderCard') borderColor: string; // permet d'entre une variable à partir du directive
-
+  // @Input('BorderCard') borderlive: string; //sans alias
   @HostListener('mouseenter') onMouseEnter() {
     this.setBorder(this.borderColor || this.defaultColor);
   }

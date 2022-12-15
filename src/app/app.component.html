@@ -8,23 +8,24 @@
    Aucun pokémon n'a été trouvé
 </p> -->
 <div class="container">
-    <div class="row">
-        <div class="col m4 s6" *ngFor="let pokemon of pokemonList" >
-        <div class="card horizontal" pkmBorderCard="red">
-            <div class="card-image">
-                <img [src]="pokemon.picture" alt="" >
-            </div>
-            <div class="card-stacked">
-                <div class="card-content">
-                    <p>{{pokemon.name}}</p>
-                    <p><small>{{pokemon.created}}</small></p>
-                </div>
-            </div>
+  <div class="row">
+    <div class="col m4 s6" *ngFor="let pokemon of pokemonList">
+      <div class="card horizontal" pkmBorderCard="yellow" BorderCard="red">
+        <div class="card-image">
+          <img [src]="pokemon.picture" alt="" />
         </div>
+        <div class="card-stacked">
+          <div class="card-content">
+            <p>{{ pokemon.name }}</p>
+            <p>
+              <small>{{ pokemon.created }}</small>
+            </p>
+          </div>
         </div>
+      </div>
     </div>
+  </div>
 </div>
 <!-- le "?" veut dire que si pokemonSelected est de type undefined alors il n'y a rien d'affiché -->
-
 
 <!-- <p (click)="selectPokemon(pokemonList[1])">{{pokemonList[1].name}}</p> -->
